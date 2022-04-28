@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.todo-parent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #344fa1;
+	color: #fff;
+}
+input,
+button {
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+}
+.todo-child form input {
+	padding: 10px;
+	font-size: 15px;
+	border: 1px solid #ccc;
+}
+.todo-child form button {
+	padding: 10px;
+	background-color: #3b4d83;
+	font-size: 15px;
+	margin-left: 10px;
+}
+.todo-child {
+	background-color: #011754;
+	padding: 20px;
+	border-radius: 5px;
+}
+.edit {
+	color: green;
+}
+.delete {
+	color: red;
+}
+.completed {
+	text-decoration: line-through;
+}
+.btnContainer {
+	display: flex;
+	justify-content: space-between;
+}
+.btnContainer button {
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+}
+.btn-completed {
+	background-color: rgb(33, 199, 33);
+}
+.btn-uncompleted {
+	background-color: red;
+}
+.btn-all {
+	background-color: rgb(79, 79, 238);
+}
+/* .todo-Container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+} */
+.todo {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0px;
+}
+.todoItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.todoItem span {
+	border: 0.5px solid white;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+}
+.todoFuncs i {
+	margin: 0px 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*  */
